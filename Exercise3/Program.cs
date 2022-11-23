@@ -2,11 +2,20 @@
 
 namespace Exercise3
 {
-    class Program
+    class Node
     {
-        static void Main(string[] args)
+        //creates nodes for the circular nexted list
+        public int rollNumber;
+        public string name;
+        public Node next;
+    }
+    class CuircularList
+    {
+        Node LAST;
+
+        public CircularList()
         {
-            Console.WriteLine("Hello World!"); 
+            LAST = null;
         }
     }
 }
