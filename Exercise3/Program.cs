@@ -40,6 +40,11 @@ namespace Exercise3
             else
                 return false;
         }
-        public void traverse
+        public void traverse()
+        {
+            if (ListEmpty())
+                Console.WriteLine("\nList is Empty");
+            else
+        }
     }
 }
