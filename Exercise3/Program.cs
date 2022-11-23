@@ -115,9 +115,18 @@ namespace Exercise3
                             }
                             break;
                         case '4':
+                            return;
+                        default:
                             {
-                                return;
+                                Console.WriteLine
+                                    ("Invalid option");
+                                break;
                             }
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
                 }
             }
         }
