@@ -97,8 +97,18 @@ namespace Exercise3
                                 }
                                 Node prev, curr;
                                 prev = curr = null;
-                                Console.WriteLine
+                                Console.WriteLine("\n Enter the roll number of the student whose record is to be searched: ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                if (obj.Search(num, ref prev, ref curr) == false)
+                                    Console.WriteLine("\n Record not found");
+                                else
+                                {
+                                    Console.WriteLine("\n Record found");
+                                    Console.WriteLine("\n Roll number:" + curr.rollNumber);
+                                    Console.WriteLine("\nName: " + curr.name);
+                                }
                             }
+                            break;
                 }
             }
         }
