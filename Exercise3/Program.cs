@@ -114,7 +114,10 @@ namespace Exercise3
                                 obj.firstNode();
                             }
                             break;
-
+                        case '4':
+                            {
+                                return;
+                            }
                 }
             }
         }
